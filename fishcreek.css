@@ -1,0 +1,69 @@
+.heading1 {
+	background-color: #003f6e;
+	line-height: 200%;
+	text-align: center;
+	background-image: url("bigfish.gif");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-shadow: 1px 2px #dedede;
+	color: #ffffff;
+}
+body {
+	background-color: #6699ff;
+	color: #d5e3ff;
+	font-family: verdana;
+}
+
+.Para_headings{
+	color:#003366;
+	text-shadow: 1px 2px #aaa;
+	font-weight: bold;
+}
+nav{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#wrapper {
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #ffffff;
+}
+#footer {
+	font-style: italic;
+	font-size: .70em;
+	color: #460da5;
+}
+.service {
+	list-style-type: none;
+}
+.service a {
+	text-decoration: none;
+}
+nav a:visited {
+	color: #037aba;
+}
+nav a:link {
+	color: #2a2ac0;
+}
+form {
+	text-orientation: top;
+}
+h2 {
+	color:#003f6e;
+	font-weight: bold;	
+	text-shadow: 1px 2px #aaa;
+}
+.sd, .wdm{
+	color:#460da5;
+}
+.heading2 {
+	background-color: #2a2ac0;
+	text-shadow: 1px 2px #aaa;
+	line-height: 200%;
+	text-align: center;
+	background-image: url("bigfish.gif");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: #ffffff;
+}
+

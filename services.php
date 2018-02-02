@@ -31,18 +31,16 @@ $con = mysqli_connect($db_name,$mysql_user,$mysql_pass,$db);
 					</td>
 					<td>
 						<div>
-							<p style="display:inline"><b class="Para_headings">Full Service Facility</b></p>
-							<dd class="sd">Veterinarians and staff are on duty 24 hours a day, 7 days a week.</dd>
-							<p style="display:inline"><b class="Para_headings">Years of Experience</b></p>
-							<dd class="sd">Fish Creek Veterinarians have provided quality, dependable care for your beloved animals since 1984.</dd>
-							<p style="display:inline"><b class="Para_headings">Open Door Policy</b></p>
-							<dd class="sd">Our professionals welcome owners to stay with their pets during any medical procedure.</dd>
+							<ul>
+								<?php
+								$sql = "SELECT * from service;";
+								$result = mysqli_query($con,$sql);
+								while($row = $result->fetch_assoc()){
+									echo "<b class=\"Para_headings\"><li>".$row["servicename"]."</li></b><p class=\"sd\" style='display:inline'>".$row["description"]."</p>";
+								}
+								?>
+							</ul>
 						</div>
-						<p class="wdm">800-555-5555<br>
-						1242 Grassy Lane<br>
-						Fish Creek, WI 55534<br>
-						</p>
-						<br> 
 						<br>
 						<div id="footer">
 						<i>Copyright &copy; 2016 Fish Creek Animal Hospital</i><br>
